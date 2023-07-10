@@ -633,7 +633,7 @@ body.light {
 }
  
 body.light .logo-wrap img {
-    content: url(logo.png);
+    content: url(https://raw.githubusercontent.com/lemin62/web/main/logo.png);
     /* thay đổi hình ảnh của logo */
 }
  
