@@ -1,0 +1,244 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+main {
+	padding-top: 80px;
+}
+
+.contact, .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25px auto;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	max-width: 300px;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	text-decoration: none; /* Thêm thuộc tính text-decoration */
+}
+
+.contact:hover, .button:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+	}
+
+.telegram {
+	background-image: linear-gradient(to right, #0695ff 0%, #a334fa 50%, #a334fa 50%, #ff6968 100%);
+}
+
+.facebook {
+	background-image: linear-gradient(to right, #1877F2, #4267B2);
+}
+
+.gmail {
+	background-image: linear-gradient(to right, #EA4335, #B31412);
+}
+
+.behance {
+	background-image: linear-gradient(to right, #1877F2, #4267B2);
+}
+
+.cv {
+	background-image: linear-gradient(to right, #ff7b00, #df6c00);
+}
+
+.paypal {
+	background-image: linear-gradient(to right, #27346A, #2790C3);
+}
+
+.svg {
+	background-image: linear-gradient(to right, #059700, #005c00);
+}
+.adobe {
+	background-image: linear-gradient(to right, #b90000, #c400a3);
+}
+
+.qr {
+	background-image: linear-gradient(to right, #00d35f, #007dc5);
+}
+
+.tiktok {
+	background-image: linear-gradient(to right, #ff0050 0%, #000000 40%, #000000 60%, #00f2ea 100%);
+}
+
+.dino {
+	background-image: linear-gradient(to right, #4b4b4b, #141414);
+}
+
+.button img {
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+	filter: brightness(0) saturate(100%) invert(100%);
+  }
+
+.contact span, .button span {
+	font-size: 18px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+  }
+  
+  #myButton {
+	background-image: linear-gradient(to right, #4b4b4b, #141414);
+	color: white;
+	padding: 20px 80px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 16px;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  #myButton:hover {
+	transform: scale(1.1);
+  }
+  
+  .popup { /*nền đen*/
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .popup-content {
+	background-color: #ffffff;
+	box-shadow: 0 0 5px #fff;
+	padding: 50px;
+	height: 250px;
+	position: fixed;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	width: 60%;
+	color: #5E2E86;
+	max-width: 220px;
+	text-align: center;
+	font-weight: bold;
+	transition: all 0.2s ease-in-out;
+  }
+
+  img {
+	width: 200px;
+	height: 200px;
+  }
+
+  img:hover {
+	transform: scale(1.1);
+  }
+  
+  .popup-content #closeButton {
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%); /* các thuộc tính khác */
+	background-color: #ccc;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 40px; /* chữ x*/
+	border-radius: 50%; /*hình tròn*/
+	transition: all 0.2s ease-in-out;
+  }
+  
+  #closeButton:hover {
+	background-color: #333;
+	font-size: 30px;
+	box-shadow: 0 0 10px #5E2E86;
+  }
+  
+  #closeButton span {
+	display: block;
+  }
+  
+  .popup.show {
+	display: block;
+  }
+  
+  .popup.show .popup-content {
+	transform: scale(1);
+	opacity: 1;
+  }
+
+footer {
+	bottom: 0;
+	width: 100%;
+	margin-top: 50px; /* Thêm khoảng cách giữa footer và đối tượng phía trên */
+	margin-bottom: 10px; /* Thêm khoảng cách giữa footer và đối tượng phía dưới */
+	/* các thuộc tính khác theo ý muốn của bạn */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #343434;
+	font-size: 12px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+	/* Thiết lập các thuộc tính cho chế độ tối */
+	body {
+	  background-color: #1f2029;
+	}
+
+	footer {
+		color: #ffffff;
+	}
+  }
+  
+  @media (prefers-color-scheme: light) {
+	/* Thiết lập các thuộc tính cho chế độ sáng */
+	body {
+	  background-color: #fff;
+	  color: #333;
+	}
+  }
+
+@media only screen and (max-width: 768px) {
+	header {
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	header {
+		height: 100px;
+	}
+	.button img {
+		width: 15px;
+		height: 15px;
+		filter: brightness(0) saturate(100%) invert(100%);
+	  }
+	.contact, .button {
+		max-width: 250px;
+	}
+	
+	.button img {
+		font-size: 20px;
+	}
+	
+	.contact span, .button span {
+		font-size: 18px;
+	}
+}
